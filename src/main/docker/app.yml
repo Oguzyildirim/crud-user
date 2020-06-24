@@ -1,0 +1,12 @@
+version: '2'
+services:
+  userservice-application:
+    image: userservice
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - SPRING_DATASOURCE_URL=jdbc:mysql://userservice-mysql:3306/userservice?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+  userservice-mysql:
+    extends:
+      file: mysql.yml
+      service: userservice-mysql

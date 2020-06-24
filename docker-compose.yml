@@ -1,0 +1,16 @@
+version: '2'
+services:
+  userservice:
+    image: userservice
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - 'SPRING_PROFILES_ACTIVE=prod,swagger'
+      - 'SPRING_DATASOURCE_URL=jdbc:mysql://userservice-mysql:3306/userservice?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true'
+      - SERVER_PORT=80
+  userservice-mysql:
+    image: 'mysql:8.0.20'
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=userservice
+    command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp

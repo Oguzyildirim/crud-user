@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "a918de75-1cfe-4cbf-be8c-e54f8c0be8ca",
+		"name": "faceit prod ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.21.0.3:8081/api/users",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"0",
+						"3"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Get All Users"
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\":\"faceit\",\n    \"lastName\":\"faceit\",\n    \"email\":\"faceit\",\n    \"nickname\":\"faceit\",\n    \"password\":\"faceit\",    \n    \"country\":\"UK\"\n}"
+				},
+				"url": {
+					"raw": "http://172.21.0.3:8081/api/users",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"0",
+						"3"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Create User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.21.0.3:8081/api/users/1",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"0",
+						"3"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				},
+				"description": "Get User By ID"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"firstName\":\"updated\",\n    \"lastName\":\"updated\",\n    \"email\":\"updated\",\n    \"nickname\":\"updated\",\n    \"password\":\"updated\",    \n    \"country\":\"updated\"\n}"
+				},
+				"url": {
+					"raw": "http://172.21.0.3:8081/api/users",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"0",
+						"3"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Update User"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Country Codde",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://172.21.0.3:8081/api/users/findAllByCountry?country=UK",
+					"protocol": "http",
+					"host": [
+						"172",
+						"21",
+						"0",
+						"3"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users",
+						"findAllByCountry"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "UK"
+						}
+					]
+				},
+				"description": "Get User By Country Codde"
+			},
+			"response": []
+		}
+	]
+}
