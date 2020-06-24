@@ -20,12 +20,12 @@ OpenAPI-Generator is configured for this application. You can generate API code 
 
 ### Packaging as jar
 
-    -MySQL is not configured because I have dockerized application above you can 		find docker commands
+    To run MySQL in a docker I have dockerized application above you can find docker commands
 
     ./gradlew -Pprod clean bootJar
 
     To run packaged app:
-		java -jar build/libs/*.ja
+		java -jar build/libs/*.jar
 
 
 ## Testing
@@ -105,4 +105,6 @@ For simplicity there is no CI/CD pipeline but since this application already doc
 
 - I also want to mention about language of choice. I like java/springboot, it makes me develop application in a perfect way, one of the best application framework but I have great interest on Golang and related technologies and nowadays I spend most of my time with Go but I always try to keep myself up-to-date about Java.
 
+- Lastly about FaceIT. I am currently working on a insurance sector, I believe we are creating great software and good collaboration with my co-workers, and my company quite big we have almost 230 people. I realize that the domain that i am working on is so important because when i do side project(me and my friend also considering using FaceIT API and once we analyze the API), i like coding a lot or creating software in general. I was playing games especially dota 2 and cs go and i used FaceIT before, i also watch Esport tournaments so my main interest always will be programming rest of my life but as a working domain FaceIT would be where i love working. And also i really truly %100 perfect believe that i would do great stuff on FaceIT learn new things, do my best that would be great opportunity for me. When companies ask " Why do you work with us?" I generally don't find anything to say but my interview with Mr. Jack i realize i have tons of things to say on working at FaceIT.
 
+- If i missing something i would gladly add if you want me to.
