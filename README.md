@@ -95,6 +95,8 @@ For simplicity there is no CI/CD pipeline but since this application already doc
 
 - I was considering adding ELK stack with docker but I thought that it is over complex for this application but I can write a ElasticSearchConfig. And also in a distributed architecture centralized logging is must.
 
+- To improve java performance and run it faster we can use GraalVM
+
 - We should use external configuration for this app spring cloud config would be a good choice.
 
 - GraphQL also can be used, when it comes to multiple different client platforms GraphQL makes perfect usages, actually I have a blog post about it, [Blog](https://stuffblog.netlify.app/blog/GraphQlBehindTheScenes/GraphQlBehindTheScenes/)
@@ -105,6 +107,3 @@ For simplicity there is no CI/CD pipeline but since this application already doc
 
 - I also want to mention about language of choice. I like java/springboot, it makes me develop application in a perfect way, one of the best application framework but I have great interest on Golang and related technologies and nowadays I spend most of my time with Go but I always try to keep myself up-to-date about Java.
 
-- Lastly about FaceIT. I am currently working on a insurance sector, I believe we are creating great software and good collaboration with my co-workers, and my company quite big we have almost 230 people. I realize that the domain that i am working on is so important because when i do side project(me and my friend also considering using FaceIT API and once we analyze the API), i like coding a lot or creating software in general. I was playing games especially dota 2 and cs go and i used FaceIT before, i also watch Esport tournaments so my main interest always will be programming rest of my life but as a working domain FaceIT would be where i love working. And also i really truly %100 perfect believe that i would do great stuff on FaceIT learn new things, do my best that would be great opportunity for me. When companies ask " Why do you work with us?" I generally don't find anything to say but my interview with Mr. Jack i realize i have tons of things to say on working at FaceIT.
-
-- If i missing something i would gladly add if you want me to.
