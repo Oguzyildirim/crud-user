@@ -107,3 +107,5 @@ For simplicity there is no CI/CD pipeline but since this application already doc
 
 - I also want to mention about language of choice. I like java/springboot, it makes me develop application in a perfect way, one of the best application framework but I have great interest on Golang and related technologies and nowadays I spend most of my time with Go but I always try to keep myself up-to-date about Java.
 
+- I added all things in a one commit because i run out some ethernet issues in my house.
+
